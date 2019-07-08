@@ -1,1 +1,22 @@
-theme: jekyll-theme-dinky
+title: Jessie Krikken
+search_enabled: false
+
+permalink: pretty
+exclude:
+  [
+    "node_modules/",
+    "*.gemspec",
+    "*.gem",
+    "Gemfile",
+    "Gemfile.lock",
+    "package.json",
+    "package-lock.json",
+    "script/",
+    "LICENSE.txt",
+    "lib/",
+    "bin/",
+    "README.md",
+    "Rakefile",
+  ]
+
+theme: just-the-docs
