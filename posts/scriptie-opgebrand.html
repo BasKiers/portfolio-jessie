@@ -5,14 +5,15 @@ file: scriptie-opgebrand
 nav_order: 10
 ---
 
+{% assign basename = "/documents/" | append: page.file %}
 <p>
   <span>Download dit bestand als </span
-  ><a href="../../documents/{{ page.file }}.pdf">pdf</a><span> of als </span
-  ><a href="../../documents/{{ page.file }}.docx">docx (Word)</a>
+  ><a href="{{ basename | append: ".pdf" | absolute_url }}">pdf</a><span> of als </span
+  ><a href="{{ basename | append: ".docx" | absolute_url }}">docx (Word)</a>
 </p>
 
 <embed
-  src="../../documents/{{ page.file }}.pdf"
+  src="{{ basename | append: ".pdf" | absolute_url }}"
   type="application/pdf"
   style="width:100%; height:100vh; height: calc(100vh - 140px)"
 />
